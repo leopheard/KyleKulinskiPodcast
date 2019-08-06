@@ -24,7 +24,7 @@ def get_playable_podcast(soup):
             link = link.get('url')
             print("\n\nLink: ", link)
 
-            title = content.find('title')
+            title = content.find('itunes:episode')
             title = title.get_text()
 
 #            desc = content.find('description')
@@ -76,7 +76,7 @@ def get_playable_podcast1(soup):
             link = link.get('url')
             print("\n\nLink: ", link)
 
-            title = content.find('title')
+            title = content.find('itunes:episode')
             title = title.get_text()
 
 #            desc = content.find('description')
